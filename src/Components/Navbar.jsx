@@ -1,4 +1,5 @@
 import React from "react";
+import ConnectWallet from "./ConnectWallet";
 
 function Navbar() {
   return (
@@ -13,8 +14,10 @@ function Navbar() {
             />
           </a>
 
-
-          <button>Connent wallet</button>
+          <ConnectWallet>
+          Connent wallet
+          </ConnectWallet>
+         
         </div>
       </div>
     </nav>
