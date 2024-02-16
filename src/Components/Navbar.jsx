@@ -2,8 +2,8 @@ import React from "react";
 
 function Navbar() {
   return (
-    <nav>
-      <div className="container-wrapper">
+    <nav className=" bg-[#2c0c0f] border-b border-[#db0505]">
+      <div className="container-wrapper py-2">
         <div className="flex justify-between items-center ">
           <a href="/">
             <img
