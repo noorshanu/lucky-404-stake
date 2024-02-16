@@ -3,6 +3,7 @@ import TotalStake from '../Components/TotalStake'
 import Stake from '../Components/Stake'
 import StakeDays from '../Components/StakeDays'
 import Unstake from '../Components/Unstake'
+import StakedAmount from '../Components/StakedAmount'
 
 function SectionStake() {
   return (
@@ -30,7 +31,7 @@ function SectionStake() {
         </div>
 
         <div>
-
+          <StakedAmount/>
 
         </div>
 
