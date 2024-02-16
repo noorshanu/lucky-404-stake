@@ -20,7 +20,7 @@
 
 .staking-banner {
  
-  background-color: #dc35452e;
+  background-color: #2c0c0fde;
   background-image: url(/images/grad.png);
   background-position: 0 0,100% 0;
   background-repeat: no-repeat;
@@ -34,7 +34,7 @@
 }
 
 .common-bg {
-  background-color: #dc35452e;
+  background-color: #2c0c0fde;
   border: 0.1rem solid rgb(219, 5, 5);
   border-radius: 1.6rem;
   position: relative;

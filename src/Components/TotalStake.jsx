@@ -2,7 +2,7 @@ import React from "react";
 
 function TotalStake() {
   return (
-    <div className="common-bg">
+    <div className="common-bg p-4">
       <div>
         <p>341.59K 5ire</p>
       </div>
