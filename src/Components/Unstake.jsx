@@ -6,8 +6,8 @@ function Unstake() {
   return (
     <div className=' common-bg p-4 w-full '>
         <div className=' flex items-center justify-between border-b'>
-            <p className=' font-quantico text-xl'>
-                stake
+            <p className=' font-quantico text-xl uppercase'>
+                Unstake
             </p>
 
             <button >
