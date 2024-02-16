@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply font-quantico;
+  }
+
+  html,
+  body {
+    @apply bg-black text-white bg-[url('/images/bg.png')] bg-cover;
+  }
+
+  .container-wrapper {
+    @apply max-w-[1240px] w-[90%] mx-auto;
+  }
+}
+
+
+.staking-banner {
+ 
+  background-color: #dc35452e;
+  background-image: url(/images/grad.png);
+  background-position: 0 0,100% 0;
+  background-repeat: no-repeat;
+  border: 0.1rem solid rgb(219, 5, 5);
+  border-radius: 1.6rem;
+ 
+  margin-bottom: 2rem;
+  min-height: 15rem;
+ 
+  position: relative;
+}
+
+.common-bg {
+  background-color: #dc35452e;
+  border: 0.1rem solid rgb(219, 5, 5);
+  border-radius: 1.6rem;
+  position: relative;
+}
