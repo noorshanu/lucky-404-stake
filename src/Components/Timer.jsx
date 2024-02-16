@@ -12,7 +12,7 @@ const CountdownTimer = () => {
   });
 
   function calculateTimeLeft() {
-    const targetDate = new Date('2024-02-17T00:00:00Z'); // Change this to your desired target date
+    const targetDate = new Date('2024-02-27T00:00:00Z'); // Change this to your desired target date
     const now = new Date();
     const difference = targetDate - now;
 

@@ -4,6 +4,7 @@ import Stake from '../Components/Stake'
 import StakeDays from '../Components/StakeDays'
 import Unstake from '../Components/Unstake'
 import StakedAmount from '../Components/StakedAmount'
+import Rewards from '../Components/Rewards'
 
 function SectionStake() {
   return (
@@ -32,6 +33,9 @@ function SectionStake() {
 
         <div>
           <StakedAmount/>
+          <div className='mt-3'>
+            <Rewards/>
+          </div>
 
         </div>
 

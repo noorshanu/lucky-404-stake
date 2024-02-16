@@ -4,7 +4,7 @@ import CountdownTimer from './Timer';
 
 function StakedAmount() {
   return (
-    <div className=' common-bg p-4 flex flex-col justify-center'>
+    <div className=' common-bg p-4 flex flex-col justify-center items-center'>
         <GiChaingun />
 
         <h2>
