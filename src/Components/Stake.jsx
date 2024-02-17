@@ -1,43 +1,47 @@
-import React from 'react'
 import { LuRefreshCcwDot } from "react-icons/lu";
-import ConnectWallet from './ConnectWallet';
+import ConnectWallet from "./ConnectWallet";
+import Paper from "./Paper";
+import Typography from "./Typography";
 
-function Stake() {
+function Stake({ title, inputLabel, inputSideText }) {
   return (
-    <div className=' common-bg p-4 w-full '>
-        <div className=' flex items-center justify-between border-b'>
-            <p className=' font-quantico text-xl'>
-                stake
-            </p>
+    <Paper className="flex flex-col">
+      <main className="flex-1">
+        <div className=" flex items-center justify-between border-b border-white/30 pb-3 mb-6">
+          <Typography.xl className="font-bold">{title}</Typography.xl>
 
-            <button >
+          <button className="bg-yellow/20 transition-all duration-500 hover:rotate-[360deg] w-7 h-7 flex items-center justify-center rounded-full text-base">
             <LuRefreshCcwDot />
-            </button>
+          </button>
         </div>
 
         <div>
-          <div className='flex justify-between items-center'>
-            <p>Enter Stake Amount</p>
+          <div className="flex justify-between items-center mb-4">
+            <Typography.sm>{inputLabel}</Typography.sm>
 
-            <p>Balance: <span>0</span></p>
-
+            {inputSideText ? (
+              <Typography.sm>{inputSideText}</Typography.sm>
+            ) : null}
           </div>
 
-          <div className=' bg-primary rounded-lg border border-yellow px-8 py-2'> 
-            <input type="text" className=' bg-transparent text-white outline-none border-none w-[250px]' placeholder='0' value='0' />
+          <div className="bg-primary/40 rounded-lg border border-yellow/20 pr-4 flex items-center justify-between h-10">
+            <input
+              type="text"
+              className="bg-transparent text-white outline-none w-full flex-1 h-full px-6"
+            />
 
             <button>Max</button>
           </div>
         </div>
+      </main>
 
-        <div className=' mx-auto flex justify-center mt-8'>
-          <ConnectWallet>
-            Connect Wallet
-          </ConnectWallet>
-        </div>
-
-    </div>
-  )
+      <div className="mt-8">
+        <ConnectWallet className="text-base w-full">
+          Connect Wallet
+        </ConnectWallet>
+      </div>
+    </Paper>
+  );
 }
 
-export default Stake
+export default Stake;

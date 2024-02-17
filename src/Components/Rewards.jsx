@@ -1,18 +1,20 @@
-import React from "react";
 import { GiTrophyCup } from "react-icons/gi";
+import Paper from "./Paper";
+import IconBox from "./IconBox";
+import Typography from "./Typography";
 function Rewards() {
   return (
-    <div className=" common-bg p-4">
-      <div className=" flex flex-col justify-center items-center">
-        <GiTrophyCup />
+    <Paper>
+      <div className="flex flex-col justify-center items-center">
+        <IconBox className="mb-4">
+          <GiTrophyCup />
+        </IconBox>
 
-        <p>Lucky404</p>
+        <Typography.xl className="font-bold mb-1">0.00 Lucky404</Typography.xl>
 
-        <p>0.00 Lucky404</p>
-
-        <p>Your Reward</p>
+        <p className="opacity-80">Your Reward</p>
       </div>
-    </div>
+    </Paper>
   );
 }
 

@@ -1,29 +1,27 @@
-import React from 'react'
 import { GiChaingun } from "react-icons/gi";
-import CountdownTimer from './Timer';
+import CountdownTimer from "./Timer";
+import Paper from "./Paper";
+import Typography from "./Typography";
+import IconBox from "./IconBox";
 
 function StakedAmount() {
   return (
-    <div className=' common-bg p-4 flex flex-col justify-center items-center'>
+    <Paper>
+      <IconBox className="mb-4">
         <GiChaingun />
+      </IconBox>
 
-        <h2>
-        0.00 5ire
-        </h2>
-
-      <div>
-      <h2>
+      <Typography.xl className="text-center font-bold">0.00 5ire</Typography.xl>
+      <Typography.base className="text-center">
         Your staked Amount
+      </Typography.base>
+      <hr className="opacity-40 my-3" />
 
-        </h2>
-      </div>
-      <p>Lockin Period</p>
+      <Typography.sm className="text-center mb-4">Lockin Period</Typography.sm>
 
-        <div>
-            <CountdownTimer/>
-        </div>
-    </div>
-  )
+      <CountdownTimer />
+    </Paper>
+  );
 }
 
-export default StakedAmount
+export default StakedAmount;

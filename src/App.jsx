@@ -7,14 +7,14 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className=" mt-4">
+      <div className="mb-8 mt-8">
         <Banner />
       </div>
       <div>
         <SectionStake />
       </div>
-      <div className=" mt-4">
-        <Footer/>
+      <div className="mt-16">
+        <Footer />
       </div>
     </>
   );

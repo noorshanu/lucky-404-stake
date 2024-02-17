@@ -10,6 +10,8 @@ export default {
       black: "black",
       transparent: "transparent",
       primary: "#FF6363",
+      "primary-dark": "#2c0c0f",
+      red: "rgb(219, 5, 5)",
       yellow: "#FAFF00",
       secondary: {
         100: "#E2E2D5",
