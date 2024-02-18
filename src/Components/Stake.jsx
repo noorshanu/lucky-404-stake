@@ -2,10 +2,11 @@ import { LuRefreshCcwDot } from "react-icons/lu";
 import ConnectWallet from "./ConnectWallet";
 import Paper from "./Paper";
 import Typography from "./Typography";
+import { twMerge } from "tailwind-merge";
 
-function Stake({ title, inputLabel, inputSideText }) {
+function Stake({ title, inputLabel, inputSideText, className }) {
   return (
-    <Paper className="flex flex-col">
+    <Paper className={twMerge("flex flex-col", className)}>
       <main className="flex-1">
         <div className=" flex items-center justify-between border-b border-white/30 pb-3 mb-6">
           <Typography.xl className="font-bold">{title}</Typography.xl>

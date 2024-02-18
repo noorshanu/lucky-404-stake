@@ -7,8 +7,8 @@ function Navbar() {
       <div className="container-wrapper py-2">
         <div className="flex justify-between items-center ">
           <img
-            src="/images/logo-text.png"
-            className="max-w-[8rem] lg:max-w-[10rem] w-full"
+            src="/images/logo-text-2.png"
+            className="max-w-[8rem] lg:max-w-[9rem] w-full"
             alt=""
           />
 

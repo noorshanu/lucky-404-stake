@@ -11,7 +11,9 @@ function StakedAmount() {
         <GiChaingun />
       </IconBox>
 
-      <Typography.xl className="text-center font-bold">0.00 5ire</Typography.xl>
+      <Typography.xl className="text-center font-bold">
+        0.00 Lucky404
+      </Typography.xl>
       <Typography.base className="text-center">
         Your staked Amount
       </Typography.base>
